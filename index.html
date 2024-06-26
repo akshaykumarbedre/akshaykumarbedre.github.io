@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Science Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <style>
+     
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container navbar-content">
+            <a class="navbar-brand" href="#home">Data Science Portfolio</a>
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section id="home" class="hero">
+            <img class="hero-img" src="akshay.jpg" >
+            <div class="container hero-content">
+                <h1>  <span class="highlight">Akshay Kumar BM</span></h1>
+                <h2>Explore the World of <span class="highlight">Data!</span></h2>
+                <p>Discover my journey in data science, from projects to skills and insights. Let's uncover the stories hidden in data together.</p>
+                <div class="cta-buttons">
+                    <button class="primary-btn"><a class="nav-link" href="#projects" style="color: white;">View Projects</a></button>
+                    <button class="secondary-btn"><a class="nav-link" href="#contact" >Contact Me</a></button>
+                </div>
+                
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <div class="container">
+                <h2>About Me</h2>
+
+                <p>As a passionate data scientist, I love exploring complex datasets and deriving meaningful insights. With a background in statistics and machine learning, I strive to solve real-world problems using data-driven approaches.</p>
+                <p>My goal is to contribute to the field of data science by developing innovative solutions and sharing knowledge with the community.</p>
+            </div>
+        </section>
+
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <h2>Projects</h2>
+                <div class="row">
+                    <div class="card">
+                        <img src="images\projects\1.jpg" class="card-img-top" alt="Project 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Customer Segmentation Analysis</h5>
+                            <p class="card-text">Used K-means clustering to segment customers based on their purchasing behavior, improving targeted marketing strategies.</p>
+                            <a href="#" class="btn btn-primary" onclick="showProjectDetails('project1')">View Details</a>
+                            <a href="#" class="btn btn-secondary">GitHub Repo</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="images\projects\2.jpg" class="card-img-top" alt="Project 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Predictive Maintenance Model</h5>
+                            <p class="card-text">Developed a machine learning model to predict equipment failures, reducing downtime and maintenance costs for a manufacturing company.</p>
+                            <a href="#" class="btn btn-primary">View Details</a>
+                            <a href="#" class="btn btn-secondary">GitHub Repo</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="images\projects\3.jpg" class="card-img-top" alt="Project 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Natural Language Processing for Sentiment Analysis</h5>
+                            <p class="card-text">Created an NLP model to analyze customer reviews and extract sentiment, improving product feedback analysis.</p>
+                            <a href="#" class="btn btn-primary">View Details</a>
+                            <a href="#" class="btn btn-secondary">GitHub Repo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills-section">
+            <div class="container">
+                <h2>Skills</h2>
+                <div class="row">
+                    <div class="card">
+                        <img src="images\skills\1.png" class="card-img-top" alt="Python">
+                        <div class="card-body">
+                            <h5 class="card-title">Python</h5>
+                            <p class="card-text">Proficient in Python for data analysis, machine learning, and web development.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="images\skills\2.png" class="card-img-top" alt="Machine Learning">
+                        <div class="card-body">
+                            <h5 class="card-title">Machine Learning</h5>
+                            <p class="card-text">Experienced in developing and deploying various machine learning models.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="images\skills\3.png" class="card-img-top" alt="SQL">
+                        <div class="card-body">
+                            <h5 class="card-title">SQL</h5>
+                            <p class="card-text">Skilled in database management and complex SQL queries for data analysis.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="images\skills\4.png" class="card-img-top" alt="Data Visualization">
+                        <div class="card-body">
+                            <h5 class="card-title">Data Visualization</h5>
+                            <p class="card-text">Proficient in creating insightful visualizations using tools like Matplotlib and Tableau.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="images\skills\4.png" class="card-img-top" alt="Data Visualization">
+                        <div class="card-body">
+                            <h5 class="card-title">Data Visualization</h5>
+                            <p class="card-text">Proficient in creating insightful visualizations using tools like Matplotlib and Tableau.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="images\skills\4.png" class="card-img-top" alt="Data Visualization">
+                        <div class="card-body">
+                            <h5 class="card-title">Data Visualization</h5>
+                            <p class="card-text">Proficient in creating insightful visualizations using tools like Matplotlib and Tableau.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2>Contact Me</h2>
+                <div class="contact-info">
+                    <p><i class="fas fa-envelope"></i> akshaykumarbedre.bm@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> (+91) 9164623536</p>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/akshay-kumar-bm/" target="_blank" class="social-link">LinkedIn</a>
+                    <a href="https://github.com/akshaykumarbedre" target="_blank" class="social-link">GitHub</a>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Your Name. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
