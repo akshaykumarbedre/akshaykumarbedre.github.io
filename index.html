@@ -4,11 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Data Science Portfolio</title>
-    <link rel="icon" href="images\about\briefcase.png">
+    <link rel="icon" href="images/about/briefcase.png">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
     <script type="text/javascript" src="javascipth.js"></script>
+    <style>
+        .typed-out {
+            display: inline-block;
+            overflow: hidden;
+            white-space: nowrap;
+            border-right: 2px solid;
+            animation: typing 4s steps(30, end), blink-caret .75s step-end infinite;
+            color: black;
+        }
+
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+
+        @keyframes blink-caret {
+            from, to { border-color: transparent; }
+            50% { border-color: black; }
+        }
+    </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
@@ -44,7 +64,7 @@
             <div class="row align-items-center">
                 <div class="col-md-6 hero-content">
                     <h1><span class="highlight">Akshay Kumar BM</span></h1>
-                    <h2>Explore the World of <span class="highlight">Data!</span></h2>
+                    <h2 class="typed-out highlight" >Explore the World of <span class="typed-out highlight">Data!</span></h2>
                     <p>Discover my journey in data science, from projects to skills and insights. Let's uncover the stories hidden in data together.</p>
                     <div class="cta-buttons">
                         <a href="#projects" class="btn btn-primary">View Projects</a>

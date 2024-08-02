@@ -113,3 +113,20 @@ diabetesPrediction: {
 
 return projects[projectId];
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+    const typedOutText = document.querySelector('.typed-out');
+    const text = typedOutText.textContent;
+    typedOutText.textContent = '';
+
+    let index = 0;
+    function type() {
+        if (index < text.length) {
+            typedOutText.textContent += text.charAt(index);
+            index++;
+            setTimeout(type, 100); // Adjust typing speed here
+        }
+    }
+    
+    type();
+});
