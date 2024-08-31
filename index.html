@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,19 +20,27 @@
             color: black;
         }
 
-     
-        @keyframes blink-caret {
-            from, to { border-color: transparent; }
-            50% { border-color: black; }
-        }
 
+        @keyframes blink-caret {
+
+            from,
+            to {
+                border-color: transparent;
+            }
+
+            50% {
+                border-color: black;
+            }
+        }
     </style>
 </head>
+
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
         <div class="container">
             <a class="navbar-brand" href="#home">Data Science Portfolio</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
@@ -47,6 +56,16 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#skills">Skills</a>
+
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#education">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#certificates">Certificates</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#achievements">Achievements</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">Contact</a>
@@ -61,8 +80,9 @@
             <div class="row align-items-center">
                 <div class="col-md-6 hero-content">
                     <h1><span class="highlight">Akshay Kumar BM</span></h1>
-                    <h2 class="typed-out highlight" >Explore the World of Data!</h2>
-                    <p>Discover my journey in data science, from projects to skills and insights. Let's uncover the stories hidden in data together.</p>
+                    <h2 class="typed-out highlight">Explore the World of Data!</h2>
+                    <p>Discover my journey in data science, from projects to skills and insights. Let's uncover the
+                        stories hidden in data together.</p>
                     <div class="cta-buttons">
                         <a href="#projects" class="btn btn-primary">View Projects</a>
                         <a href="#contact" class="btn btn-secondary">Contact</a>
@@ -75,188 +95,284 @@
         </div>
     </section>
 
-        <section id="about" class="about-section">
-            <div class="container">
-                <h2>About Me</h2>
 
-                <p>After exploring various careers, I found my passion for data science fueled by strong math skills, programming expertise, and a drive to excel in this dynamic field..</p>
-                <p>My goal is to contribute to the field of data science by developing innovative solutions </p>
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Hello! I'm Akshay Kumar BM, a recent graduate with a strong passion for data science and machine
+                learning. My journey into this field began with a solid foundation in mathematics and programming, which
+                I've since expanded through self-study, online courses, and hands-on projects.</p>
+            <p>What excites me most about data science is its power to extract meaningful insights from complex datasets
+                and its potential to solve real-world problems across various industries. </p>
+            <p>As a junior data scientist, I bring:</p>
+            <ul>
+                <li>Strong analytical skills and attention to detail</li>
+                <li>Proficiency in Python, SQL, and data visualization tools</li>
+                <li>Experience with machine learning libraries such as scikit-learn and TensorFlow</li>
+                <li>A solid understanding of statistical concepts and their applications</li>
+                <li>Excellent communication skills to present complex findings to non-technical stakeholders</li>
+                <li>A growth mindset and eagerness to continuously learn and adapt to new technologies</li>
+            </ul>
+            <p>I'm excited about the opportunity to contribute my skills and learn from experienced professionals in a
+                dynamic data science team. My goal is to develop innovative solutions that make a tangible impact and to
+                grow into a well-rounded data scientist capable of tackling complex challenges.</p>
+        </div>
+    </section>
+
+
+
+    <div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="projectModalLabel"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p id="modalDescription"></p>
+                    <h6>Technologies Used:</h6>
+                    <ul id="modalTechnologies"></ul>
+                    <h6>Key Features:</h6>
+                    <ul id="modalFeatures"></ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
             </div>
-        </section>
-        <div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="projectModalLabel"></h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="row">
+                <div class="card">
+                    <img src="images/projects/backorder-prediction.jpg" class="card-img-top" alt="Backorder Prediction">
+                    <div class="card-body">
+                        <h5 class="card-title">Backorder Prediction System</h5>
+                        <p class="card-text">An end-to-end machine learning pipeline for predicting product backorders
+                            in supply chain management, featuring CI/CD integration.</p>
+                        <a href="#" class="btn btn-primary" onclick="showProjectDetails('backorderPrediction')">View
+                            Details</a>
+                        <a href="https://github.com/akshaykumarbedre/BackOrder_Prediction" class="btn btn-secondary"
+                            target="_blank">GitHub Repo</a>
                     </div>
-                    <div class="modal-body">
-                        <p id="modalDescription"></p>
-                        <h6>Technologies Used:</h6>
-                        <ul id="modalTechnologies"></ul>
-                        <h6>Key Features:</h6>
-                        <ul id="modalFeatures"></ul>
+                </div>
+                <div class="card">
+                    <img src="images/projects/Diabeties-prediction.jpg" class="card-img-top" alt=" Diabetes Prediction">
+                    <div class="card-body">
+
+                        <h5 class="card-title"> Diabetes Prediction System</h5>
+                        <p class="card-text">Forecasting Future Health: Developing a Machine Learning Model for Diabetes
+                            Prediction</p>
+                        <a href="#" class="btn btn-primary" onclick="showProjectDetails('diabetesPrediction')">View
+                            Details</a>
+                        <a href="https://github.com/akshaykumarbedre/diabetes" class="btn btn-secondary"
+                            target="_blank">GitHub Repo</a>
                     </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+                <div class="card">
+                    <img src="images/projects/portfolio-management.jpg" class="card-img-top"
+                        alt="AI Portfolio Management">
+                    <div class="card-body">
+                        <h5 class="card-title">Portfolio Management & Stock Filter</h5>
+                        <p class="card-text">A comprehensive Flask application for intelligent portfolio management and
+                            analysis, deployed as an end-to-end solution.</p>
+                        <a href="#" class="btn btn-primary" onclick="showProjectDetails('portfolioManagement')">View
+                            Details</a>
+                        <a href="https://github.com/akshaykumarbedre/stock_screen_collage_projest"
+                            class="btn btn-secondary" target="_blank">GitHub Repo</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/projects/movie-recommendation.jpg" class="card-img-top" alt="Movie Recommendation">
+                    <div class="card-body">
+                        <h5 class="card-title">Movie Recommendation System</h5>
+                        <p class="card-text">A Jupyter Notebook-based movie recommendation system using collaborative
+                            filtering techniques.</p>
+                        <a href="#" class="btn btn-primary" onclick="showProjectDetails('movieRecommendation')">View
+                            Details</a>
+                        <a href="https://github.com/akshaykumarbedre/Movie_recommendation_system"
+                            class="btn btn-secondary" target="_blank">GitHub Repo</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/projects/gesture-game.jpg" class="card-img-top" alt="Hand Gesture Game">
+                    <div class="card-body">
+                        <h5 class="card-title">Hand Gesture-Controlled Hill Climb Racing Game</h5>
+                        <p class="card-text">An innovative integration of computer vision and gaming using MediaPipe and
+                            OpenCV for hand gesture control.</p>
+                        <a href="#" class="btn btn-primary" onclick="showProjectDetails('gestureGame')">View Details</a>
+                        <a href="https://github.com/akshaykumarbedre/HandSignPlay" class="btn btn-secondary"
+                            target="_blank">GitHub Repo</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/projects/stock-analysis.jpg" class="card-img-top" alt="Stock Analysis">
+                    <div class="card-body">
+                        <h5 class="card-title">Real-Time Stock Analysis Software</h5>
+                        <p class="card-text">A powerful tool for analyzing stock market trends and making data-driven
+                            investment decisions in real-time.</p>
+                        <a href="#" class="btn btn-primary" onclick="showProjectDetails('stockAnalysis')">View
+                            Details</a>
+                        <a href="https://github.com/akshaykumarbedre/Realtime-Stock-Analysis" class="btn btn-secondary"
+                            target="_blank">GitHub Repo</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/projects/sentiment-analysis.jpg" class="card-img-top" alt="Sentiment Analysis">
+                    <div class="card-body">
+                        <h5 class="card-title">Sentiment Analysis Tool</h5>
+                        <p class="card-text">A Tkinter-based application for real-time sentiment analysis using NLP
+                            techniques.</p>
+                        <a href="#" class="btn btn-primary" onclick="showProjectDetails('sentimentAnalysis')">View
+                            Details</a>
+                        <a href="https://github.com/akshaykumarbedre/Feedback-Sentiment-Analysis"
+                            class="btn btn-secondary" target="_blank">GitHub Repo</a>
                     </div>
                 </div>
             </div>
         </div>
-        
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    </section>
 
-        
-        <section id="projects" class="projects-section">
-            <div class="container">
-                <h2>Projects</h2>
-                <div class="row">
-                    <div class="card">
-                        <img src="images/projects/backorder-prediction.jpg" class="card-img-top" alt="Backorder Prediction">
-                        <div class="card-body">
-                            <h5 class="card-title">Backorder Prediction System</h5>
-                            <p class="card-text">An end-to-end machine learning pipeline for predicting product backorders in supply chain management, featuring CI/CD integration.</p>
-                            <a href="#" class="btn btn-primary" onclick="showProjectDetails('backorderPrediction')">View Details</a>
-                            <a href="https://github.com/akshaykumarbedre/BackOrder_Prediction" class="btn btn-secondary" target="_blank">GitHub Repo</a>
-                        </div>
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="row">
+                <div class="card">
+                    <img src="images/skills/python.png" class="card-img-top" alt="Python">
+                    <div class="card-body">
+                        <h5 class="card-title">Python</h5>
+                        <p class="card-text">Proficient in Python for data analysis, machine learning, and web
+                            development.</p>
                     </div>
-                    <div class="card">
-                        <img src="images/projects/Diabeties-prediction.jpg" class="card-img-top" alt=" Diabetes Prediction">
-                        <div class="card-body">
-                           
-                            <h5 class="card-title"> Diabetes Prediction System</h5>
-                            <p class="card-text">Forecasting Future Health: Developing a Machine Learning Model for Diabetes Prediction</p>
-                            <a href="#" class="btn btn-primary" onclick="showProjectDetails('diabetesPrediction')">View Details</a>
-                            <a href="https://github.com/akshaykumarbedre/diabetes" class="btn btn-secondary" target="_blank" >GitHub Repo</a>
-                        </div>
+                </div>
+                <div class="card">
+                    <img src="images/skills/machine-learning.png" class="card-img-top" alt="Machine Learning">
+                    <div class="card-body">
+                        <h5 class="card-title">Machine Learning</h5>
+                        <p class="card-text">Experienced in developing and deploying various machine learning models.
+                        </p>
                     </div>
-                    <div class="card">
-                        <img src="images/projects/portfolio-management.jpg" class="card-img-top" alt="AI Portfolio Management">
-                        <div class="card-body">
-                            <h5 class="card-title">Portfolio Management & Stock Filter</h5>
-                            <p class="card-text">A comprehensive Flask application for intelligent portfolio management and analysis, deployed as an end-to-end solution.</p>
-                            <a href="#" class="btn btn-primary" onclick="showProjectDetails('portfolioManagement')">View Details</a>
-                            <a href="https://github.com/akshaykumarbedre/stock_screen_collage_projest" class="btn btn-secondary" target="_blank">GitHub Repo</a>
-                        </div>
+                </div>
+                <div class="card">
+                    <img src="images/skills/sql.png" class="card-img-top" alt="SQL">
+                    <div class="card-body">
+                        <h5 class="card-title">SQL</h5>
+                        <p class="card-text">Skilled in database management and complex SQL queries for data analysis.
+                        </p>
                     </div>
-                    <div class="card">
-                        <img src="images/projects/movie-recommendation.jpg" class="card-img-top" alt="Movie Recommendation">
-                        <div class="card-body">
-                            <h5 class="card-title">Movie Recommendation System</h5>
-                            <p class="card-text">A Jupyter Notebook-based movie recommendation system using collaborative filtering techniques.</p>
-                            <a href="#" class="btn btn-primary" onclick="showProjectDetails('movieRecommendation')">View Details</a>
-                            <a href="https://github.com/akshaykumarbedre/Movie_recommendation_system" class="btn btn-secondary" target="_blank" >GitHub Repo</a>
-                        </div>
+                </div>
+                <div class="card">
+                    <img src="images/skills/data-visualization.png" class="card-img-top" alt="Data Visualization">
+                    <div class="card-body">
+                        <h5 class="card-title">Data Visualization</h5>
+                        <p class="card-text">Proficient in creating insightful visualizations using tools like
+                            Matplotlib and Tableau.</p>
                     </div>
-                    <div class="card">
-                        <img src="images/projects/gesture-game.jpg" class="card-img-top" alt="Hand Gesture Game">
-                        <div class="card-body">
-                            <h5 class="card-title">Hand Gesture-Controlled Hill Climb Racing Game</h5>
-                            <p class="card-text">An innovative integration of computer vision and gaming using MediaPipe and OpenCV for hand gesture control.</p>
-                            <a href="#" class="btn btn-primary" onclick="showProjectDetails('gestureGame')">View Details</a>
-                            <a href="https://github.com/akshaykumarbedre/HandSignPlay" class="btn btn-secondary" target="_blank" >GitHub Repo</a>
-                        </div>
+                </div>
+                <div class="card">
+                    <img src="images/skills/statistical-analysis.png" class="card-img-top" alt="Statistical Analysis">
+                    <div class="card-body">
+                        <h5 class="card-title">Statistical Analysis</h5>
+                        <p class="card-text">Strong foundation in statistical methods and their application in data
+                            science.</p>
                     </div>
-                    <div class="card">
-                        <img src="images/projects/stock-analysis.jpg" class="card-img-top" alt="Stock Analysis">
-                        <div class="card-body">
-                            <h5 class="card-title">Real-Time Stock Analysis Software</h5>
-                            <p class="card-text">A powerful tool for analyzing stock market trends and making data-driven investment decisions in real-time.</p>
-                            <a href="#" class="btn btn-primary" onclick="showProjectDetails('stockAnalysis')">View Details</a>
-                            <a href="https://github.com/akshaykumarbedre/Realtime-Stock-Analysis" class="btn btn-secondary" target="_blank" >GitHub Repo</a>
-                        </div>
+                </div>
+
+                <div class="card">
+                    <img src="images/skills/deep-learning.png" class="card-img-top" alt="Deep Learning">
+                    <div class="card-body">
+                        <h5 class="card-title">Deep Learning</h5>
+                        <p class="card-text">Proficient in building and training neural networks using TensorFlow and
+                            PyTorch.</p>
                     </div>
-                    <div class="card">
-                        <img src="images/projects/sentiment-analysis.jpg" class="card-img-top" alt="Sentiment Analysis">
-                        <div class="card-body">
-                            <h5 class="card-title">Sentiment Analysis Tool</h5>
-                            <p class="card-text">A Tkinter-based application for real-time sentiment analysis using NLP techniques.</p>
-                            <a href="#" class="btn btn-primary" onclick="showProjectDetails('sentimentAnalysis')">View Details</a>
-                            <a href="https://github.com/akshaykumarbedre/Feedback-Sentiment-Analysis" class="btn btn-secondary" target="_blank" >GitHub Repo</a>
-                        </div>
+                </div>
+                <div class="card">
+                    <img src="images/skills/data-preprocessing.png" class="card-img-top" alt="Data Preprocessing">
+                    <div class="card-body">
+                        <h5 class="card-title">Data Preprocessing</h5>
+                        <p class="card-text">Skilled in cleaning, transforming, and preparing data for analysis and
+                            modeling.</p>
                     </div>
                 </div>
             </div>
-        </section>
-
-        <section id="skills" class="skills-section">
-            <div class="container">
-                <h2>Skills</h2>
-                <div class="row">
-                    <div class="card">
-                        <img src="images/skills/python.png" class="card-img-top" alt="Python">
-                        <div class="card-body">
-                            <h5 class="card-title">Python</h5>
-                            <p class="card-text">Proficient in Python for data analysis, machine learning, and web development.</p>
-                        </div>
+        </div>
+    </section>
+    <section id="education" class="education-section">
+        <div class="container">
+            <h2>Education</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Bachelor of Computer Application</h3>
+                        <p>Kalpataru First Grade Science College, Tiptur</p>
+                        <p>2021 - 2024</p>
+                        <p>CGPA: 8.5/10</p>
                     </div>
-                    <div class="card">
-                        <img src="images/skills/machine-learning.png" class="card-img-top" alt="Machine Learning">
-                        <div class="card-body">
-                            <h5 class="card-title">Machine Learning</h5>
-                            <p class="card-text">Experienced in developing and deploying various machine learning models.</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="images/skills/sql.png" class="card-img-top" alt="SQL">
-                        <div class="card-body">
-                            <h5 class="card-title">SQL</h5>
-                            <p class="card-text">Skilled in database management and complex SQL queries for data analysis.</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="images/skills/data-visualization.png" class="card-img-top" alt="Data Visualization">
-                        <div class="card-body">
-                            <h5 class="card-title">Data Visualization</h5>
-                            <p class="card-text">Proficient in creating insightful visualizations using tools like Matplotlib and Tableau.</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="images/skills/statistical-analysis.png" class="card-img-top" alt="Statistical Analysis">
-                        <div class="card-body">
-                            <h5 class="card-title">Statistical Analysis</h5>
-                            <p class="card-text">Strong foundation in statistical methods and their application in data science.</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="images/skills/big-data.png" class="card-img-top" alt="Big Data Technologies">
-                        <div class="card-body">
-                            <h5 class="card-title">Big Data Technologies</h5>
-                            <p class="card-text">Experience with Hadoop and other big data processing frameworks.</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="images/skills/deep-learning.png" class="card-img-top" alt="Deep Learning">
-                        <div class="card-body">
-                            <h5 class="card-title">Deep Learning</h5>
-                            <p class="card-text">Proficient in building and training neural networks using TensorFlow and PyTorch.</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="images/skills/data-preprocessing.png" class="card-img-top" alt="Data Preprocessing">
-                        <div class="card-body">
-                            <h5 class="card-title">Data Preprocessing</h5>
-                            <p class="card-text">Skilled in cleaning, transforming, and preparing data for analysis and modeling.</p>
-                        </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Pre-University Course (PUC)</h3>
+                        <p>Adichuchugiri PU Collage, Arsikere</p>
+                        <p>2019 - 2021</p>
+                        <p>Percentage: 92.5%</p>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="contact" class="contact-section">
-            <div class="container">
-                <h2>Contact Me</h2>
-                <div class="contact-info">
-                    <p><i class="fas fa-envelope"></i> akshaykumarbedre.bm@gmail.com</p>
-                    <p><i class="fas fa-phone"></i> (+91) 9164623536</p>
+    <section id="certificates" class="certificates-section">
+        <div class="container">
+            <h2>Certificates</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="certificate-card">
+                        <img src="images/certificate/data_sciece.png" alt="Data Science Certificate">
+                        <h3>Data Science Master</h3>
+                        <p>PWskill </p>
+                        <p>Completed: Nov 2023</p>
+                    </div>
                 </div>
-                <div class="social-links">
-                    <a href="https://www.linkedin.com/in/akshay-kumar-bm/" target="_blank" class="social-link">LinkedIn</a>
-                    <a href="https://github.com/akshaykumarbedre" target="_blank" class="social-link">GitHub</a>
 
+                <div class="col-md-4">
+                    <div class="certificate-card">
+                        <img src="images\certificate\backorder_intership.png" alt="Python Certificate">
+                        <h3>Data Science Intern</h3>
+                        <p>PW (PhysicsWallah)</p>
+
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="certificate-card">
+                        <img src="images\certificate\mentoeship.png" alt="Mentorship Certificate">
+                        <h3>Mentorship form Aamar Srivastava</h3>
+                        <p>Mentorship from Mentor to go</p>
+
+                    </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <div class="contact-info">
+                <p><i class="fas fa-envelope"></i> akshaykumarbedre.bm@gmail.com</p>
+                <p><i class="fas fa-phone"></i> (+91) 9164623536</p>
+            </div>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/akshay-kumar-bm/" target="_blank" class="social-link">LinkedIn</a>
+                <a href="https://github.com/akshaykumarbedre" target="_blank" class="social-link">GitHub</a>
+
+            </div>
+        </div>
+    </section>
     </main>
 
     <footer>
@@ -264,7 +380,8 @@
             <p>&copy; 2024 Akshay Kumar BM. All rights reserved.</p>
         </div>
     </footer>
- 
-   
+
+
 </body>
+
 </html>

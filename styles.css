@@ -296,7 +296,6 @@ footer {
   margin-bottom: 1rem;
   flex-grow: 1;
 }
-
 @media (max-width: 992px) {
   .skills-section .card {
     flex: 0 0 calc(50% - 20px);
@@ -308,5 +307,158 @@ footer {
   .skills-section .card {
     flex: 0 0 100%;
     max-width: 100%;
+  }
+}
+/* ... (existing CSS styles) ... */
+
+/* Education section styles */
+.education-section {
+  background-color: #f8f9fa;
+  padding: 4rem 0;
+}
+
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 2px;
+  background-color: #6c5ce7;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -1px;
+}
+
+.timeline-item {
+  padding: 1rem 2rem;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+.timeline-item:nth-child(odd) {
+  left: 0;
+}
+
+.timeline-item:nth-child(even) {
+  left: 50%;
+}
+
+.timeline-item::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  right: -10px;
+  background-color: #fff;
+  border: 3px solid #6c5ce7;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.timeline-item:nth-child(even)::after {
+  left: -10px;
+}
+
+.timeline-content {
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-content h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #6c5ce7;
+}
+
+/* Certificates section styles */
+.certificates-section {
+  padding: 4rem 0;
+}
+
+.certificate-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.certificate-card img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.certificate-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #6c5ce7;
+}
+
+/* Achievements section styles */
+.achievements-section {
+  background-color: #f8f9fa;
+  padding: 4rem 0;
+}
+
+.achievement-list {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.achievement-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+}
+
+.achievement-item i {
+  font-size: 2rem;
+  color: #6c5ce7;
+  margin-right: 1rem;
+}
+
+.achievement-content h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #6c5ce7;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .timeline::after {
+      left: 31px;
+  }
+  
+  .timeline-item {
+      width: 100%;
+      padding-left: 70px;
+      padding-right: 25px;
+  }
+  
+  .timeline-item::before {
+      left: 60px;
+      border: medium solid #fff;
+      border-width: 10px 10px 10px 0;
+      border-color: transparent #fff transparent transparent;
+  }
+
+  .timeline-item:nth-child(even) {
+      left: 0%;
+  }
+  
+  .timeline-item:nth-child(odd)::after, .timeline-item:nth-child(even)::after {
+      left: 21px;
   }
 }
