@@ -4,15 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Akshay Kumar BM - AI Engineer & Data Scientist</title>
-    <meta name="description" content="AI Engineer specializing in machine learning, data science, and intelligent automation solutions. Building production-ready ML systems that drive business value.">
+    <title>Akshay Kumar BM — Senior AI Engineer</title>
+    <meta name="description" content="Senior AI Engineer specializing in production multi-agent systems, MCP server development, prompt engineering, and agent evaluation. Available for remote roles.">
     <link rel="icon" href="images/about/briefcase.png">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="styles.css" rel="stylesheet">
     <script type="text/javascript" src="javascipth.js"></script>
-    
+
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-5DHSN7G1JT"></script>
     <script>
@@ -24,11 +24,15 @@
 </head>
 
 <body>
+
+    <!-- Scroll progress bar -->
+    <div class="scroll-progress"></div>
+
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#home">
-                <i class="fas fa-robot me-2"></i>Akshay Kumar BM
+                <span class="brand-icon">⬡</span> Akshay Kumar BM
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -40,7 +44,9 @@
                     <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
                     <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
                     <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-cta" href="#contact">Contact</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -48,52 +54,78 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero-section">
-        <div class="hero-background">
-            <div class="neural-network"></div>
-        </div>
+        <div class="hero-grid-bg"></div>
+        <div class="hero-glow hero-glow-1"></div>
+        <div class="hero-glow hero-glow-2"></div>
         <div class="container">
             <div class="row align-items-center min-vh-100">
                 <div class="col-lg-7 hero-content">
-                    <div class="status-badge mb-3">
-                        <i class="fas fa-circle text-success me-2"></i>Available for Projects
+                    <div class="status-badge mb-4">
+                        <span class="status-dot"></span>
+                        Open to Remote Roles
                     </div>
+                    <div class="hero-label mb-2">Senior AI Engineer</div>
                     <h1 class="hero-title mb-3">
-                        AI Engineer & Data Scientist
-                        <span class="highlight-text">Building Intelligent Solutions</span>
+                        Building AI Systems<br>
+                        <span class="highlight-text">That Ship to Production</span>
                     </h1>
                     <p class="hero-subtitle mb-4">
-                        Transforming complex data into actionable insights and deploying production-ready ML systems 
-                        that drive measurable business impact. Specialized in agentic workflows, predictive analytics, 
-                        and automated intelligence solutions.
+                        I design and deliver production multi-agent systems — from LangGraph orchestration and 
+                        MCP server development, to system prompt engineering and agent evaluation pipelines. 
+                        I care about agents that work in the real world, not just in demos.
                     </p>
-                    <div class="hero-stats mb-4">
+                    <div class="hero-tags mb-4">
+                        <span class="hero-tag"><i class="fas fa-network-wired"></i> Multi-Agent Systems</span>
+                        <span class="hero-tag"><i class="fas fa-plug"></i> MCP Servers</span>
+                        <span class="hero-tag"><i class="fas fa-terminal"></i> Prompt Engineering</span>
+                        <span class="hero-tag"><i class="fas fa-chart-bar"></i> Agent Evaluation</span>
+                    </div>
+                    <div class="hero-stats mb-5">
                         <div class="stat-item">
-                            <div class="stat-number">7+</div>
-                            <div class="stat-label">AI Projects</div>
+                            <div class="stat-number">10+</div>
+                            <div class="stat-label">AI Systems Built</div>
                         </div>
-               
+                        <div class="stat-divider"></div>
                         <div class="stat-item">
-                            <div class="stat-number">1+</div>
-                            <div class="stat-label">Years Experience</div>
+                            <div class="stat-number">3+</div>
+                            <div class="stat-label">Years in AI/ML</div>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-item">
+                            <div class="stat-number">5+</div>
+                            <div class="stat-label">MCP Integrations</div>
                         </div>
                     </div>
                     <div class="cta-buttons">
                         <a href="#projects" class="btn btn-primary btn-lg me-3">
-                            <i class="fas fa-rocket me-2"></i>View Projects
+                            <i class="fas fa-rocket me-2"></i>View Work
                         </a>
                         <a href="#contact" class="btn btn-outline-light btn-lg">
-                            <i class="fas fa-comments me-2"></i>Let's Build Together
+                            <i class="fas fa-arrow-right me-2"></i>Let's Connect
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-5 text-center">
+                <div class="col-lg-5 text-center mt-5 mt-lg-0">
                     <div class="hero-image-container">
-                        <img src="images/about/akshay.png" alt="Akshay Kumar BM - AI Engineer" class="hero-image">
+                        <div class="hero-image-ring"></div>
+                        <img src="images/about/akshay.png" alt="Akshay Kumar BM — Senior AI Engineer" class="hero-image">
                         <div class="floating-elements">
-                            <div class="floating-icon python"><i class="fab fa-python"></i></div>
-                            <div class="floating-icon tensorflow"><i class="fas fa-brain"></i></div>
-                            <div class="floating-icon aws"><i class="fab fa-aws"></i></div>
-                            <div class="floating-icon ml"><i class="fas fa-chart-line"></i></div>
+                            <div class="floating-card fc-top-right">
+                                <span class="fc-icon">🐍</span>
+                                <span class="fc-label">Python</span>
+                            </div>
+                            <div class="floating-card fc-mid-right">
+                                <span class="fc-icon">🔗</span>
+                                <span class="fc-label">LangGraph</span>
+                            </div>
+                            <div class="floating-card fc-bottom-left">
+                                <span class="fc-icon">⚡</span>
+                                <span class="fc-label">FastAPI</span>
+                            </div>
+                            <div class="floating-card fc-top-left">
+                                <span class="fc-icon">🤖</span>
+                                <span class="fc-label">MCP</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -105,98 +137,98 @@
     <section id="expertise" class="expertise-section">
         <div class="container">
             <div class="section-header text-center mb-5">
-                <h2 class="section-title">Core Expertise</h2>
-                <p class="section-subtitle">Specialized in cutting-edge AI technologies that solve real business challenges</p>
+                <div class="section-label">Core Expertise</div>
+                <h2 class="section-title">Where I Deliver Value</h2>
+                <p class="section-subtitle">Deep specialization across the full lifecycle of production AI systems</p>
             </div>
             <div class="row g-4">
                 <div class="col-lg-4 col-md-6">
                     <div class="expertise-card">
                         <div class="expertise-icon">
-                            <i class="fas fa-brain"></i>
+                            <i class="fas fa-diagram-project"></i>
                         </div>
-                        <h4>AI/ML Engineering</h4>
-                        <p>End-to-end ML pipeline development, model optimization, and production deployment with 95%+ accuracy rates.</p>
+                        <h4>Agent Architecture</h4>
+                        <p>Designing and shipping production multi-agent pipelines using LangChain and LangGraph — with robust state machines, tool routing, and failure handling.</p>
                         <ul class="expertise-list">
-                            <li>Predictive Modeling</li>
-                            <li>Deep Learning</li>
-                            <li>Model Deployment</li>
-                            <li>MLOps</li>
+                            <li>Multi-agent orchestration</li>
+                            <li>Autonomous agent design</li>
+                            <li>LangGraph state machines</li>
+                            <li>Tool use & routing logic</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="expertise-card expertise-card--highlight">
+                        <div class="expertise-icon">
+                            <i class="fas fa-plug-circle-bolt"></i>
+                        </div>
+                        <h4>MCP Server Development</h4>
+                        <p>Building custom MCP (Model Context Protocol) servers and integrating enterprise tools — giving LLMs structured, reliable access to real systems.</p>
+                        <ul class="expertise-list">
+                            <li>Custom MCP server build</li>
+                            <li>Tool schema design</li>
+                            <li>Jira / Confluence / GitHub</li>
+                            <li>Playwright-based scrapers</li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="expertise-card">
                         <div class="expertise-icon">
-                            <i class="fas fa-robot"></i>
-                        </div>
-                        <h4>Agentic Applications</h4>
-                        <p>Multi-agent systems and autonomous workflows using LangChain, LangGraph for intelligent automation.</p>
-                        <ul class="expertise-list">
-                            <li>Multi-Agent Systems</li>
-                            <li>Workflow Automation</li>
-                            <li>RAG Systems</li>
-                            <li>LLM Integration</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="expertise-card">
-                        <div class="expertise-icon">
-                            <i class="fas fa-chart-analytics"></i>
-                        </div>
-                        <h4>Data Science & Analytics</h4>
-                        <p>Advanced analytics, forecasting, and business intelligence solutions that drive strategic decisions.</p>
-                        <ul class="expertise-list">
-                            <li>Predictive Analytics</li>
-                            <li>Time Series Forecasting</li>
-                            <li>Statistical Modeling</li>
-                            <li>Business Intelligence</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="expertise-card">
-                        <div class="expertise-icon">
-                            <i class="fas fa-comments"></i>
-                        </div>
-                        <h4>Customer Support Automation</h4>
-                        <p>Intelligent chatbots and NLP solutions that reduce support costs by 60% while improving satisfaction.</p>
-                        <ul class="expertise-list">
-                            <li>Conversational AI</li>
-                            <li>NLP Solutions</li>
-                            <li>Sentiment Analysis</li>
-                            <li>Automated Workflows</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="expertise-card">
-                        <div class="expertise-icon">
-                            <i class="fas fa-cloud"></i>
-                        </div>
-                        <h4>Cloud & Deployment</h4>
-                        <p>Scalable cloud infrastructure on AWS with CI/CD pipelines for robust ML system deployment.</p>
-                        <ul class="expertise-list">
-                            <li>AWS Cloud Services</li>
-                            <li>Google Cloud </li>
-                            <li>CI/CD Pipelines</li>
-                           
-                            <li>System Scaling</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="expertise-card">
-                        <div class="expertise-icon">
-                            <i class="fas fa-cogs"></i>
+                            <i class="fas fa-terminal"></i>
                         </div>
                         <h4>Prompt Engineering</h4>
-                        <p>Advanced prompt optimization and LLM fine-tuning for domain-specific applications and improved performance.</p>
+                        <p>Crafting production-grade system prompts — with precise output formatting, structured reasoning chains, and versioned prompt management.</p>
                         <ul class="expertise-list">
-                            <li>LLM Fine-tuning</li>
-                            <li>Prompt Optimization</li>
-                            <li>Model Customization</li>
-                            <li>Performance Tuning</li>
+                            <li>System prompt design</li>
+                            <li>Chain-of-thought prompting</li>
+                            <li>Structured output control</li>
+                            <li>Prompt versioning</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="expertise-card expertise-card--highlight">
+                        <div class="expertise-icon">
+                            <i class="fas fa-flask-vial"></i>
+                        </div>
+                        <h4>Agent Evaluation</h4>
+                        <p>Designing eval frameworks that catch regressions before production — LLM-as-judge pipelines, tracing, scoring, and behavioral reliability testing.</p>
+                        <ul class="expertise-list">
+                            <li>Eval framework design</li>
+                            <li>LLM-as-judge pipelines</li>
+                            <li>Regression testing</li>
+                            <li>Tracing & observability</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="expertise-card">
+                        <div class="expertise-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h4>RAG & LLM Infrastructure</h4>
+                        <p>End-to-end RAG pipelines — from embedding strategy and chunking to retrieval optimization and vector store management at scale.</p>
+                        <ul class="expertise-list">
+                            <li>RAG pipeline design</li>
+                            <li>Vector DB management</li>
+                            <li>Embedding strategies</li>
+                            <li>Retrieval optimization</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="expertise-card">
+                        <div class="expertise-icon">
+                            <i class="fas fa-cloud-bolt"></i>
+                        </div>
+                        <h4>Cloud & API Backend</h4>
+                        <p>Production-grade FastAPI backends and cloud deployments on AWS — containerized, CI/CD-ready, and built to scale with AI workloads.</p>
+                        <ul class="expertise-list">
+                            <li>FastAPI microservices</li>
+                            <li>AWS / GCP deployment</li>
+                            <li>Docker & CI/CD</li>
+                            <li>Async API design</li>
                         </ul>
                     </div>
                 </div>
@@ -208,21 +240,22 @@
     <section id="projects" class="projects-section">
         <div class="container">
             <div class="section-header text-center mb-5">
-                <h2 class="section-title">Featured Projects</h2>
-                <p class="section-subtitle">Production-ready AI solutions delivering measurable business impact</p>
+                <div class="section-label">Featured Projects</div>
+                <h2 class="section-title">Things I've Shipped</h2>
+                <p class="section-subtitle">Production AI systems delivering measurable impact</p>
             </div>
             <div class="row g-4">
                 <!-- Project 1: Invoice Processing System -->
                 <div class="col-lg-6">
                     <div class="project-card featured">
                         <div class="project-video">
-                            <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7331622096768249856?compact=1" 
-                                    height="300" width="100%" frameborder="0" allowfullscreen 
+                            <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7331622096768249856?compact=1"
+                                    height="300" width="100%" frameborder="0" allowfullscreen
                                     title="AI-Powered Invoice Processing Demo"></iframe>
                             <div class="project-overlay">
                                 <div class="project-actions">
-                                    <button class="btn btn-outline-light btn-sm" onclick="showProjectDetails('invoiceProcessing')">
-                                        <i class="fas fa-info-circle me-2"></i>Details
+                                    <button class="btn btn-sm" onclick="showProjectDetails('invoiceProcessing')">
+                                        <i class="fas fa-info-circle me-1"></i>Details
                                     </button>
                                 </div>
                             </div>
@@ -230,15 +263,15 @@
                         <div class="project-content">
                             <div class="project-badge">Featured</div>
                             <h4>AI-Powered Invoice Processing & Chat System</h4>
-                            <p>Automated invoice processing using Generative AI with conversational interface, reducing processing time from hours to minutes</p>
+                            <p>Automated invoice processing using multimodal GenAI with a conversational interface — cutting processing time from hours to minutes per batch.</p>
                             <div class="project-tech">
                                 <span class="tech-tag">LangChain</span>
-                                <span class="tech-tag">Google Gemini</span>
+                                <span class="tech-tag">Gemini Multimodal</span>
                                 <span class="tech-tag">Flask</span>
-                                <span class="tech-tag">Multimodal AI</span>
+                                <span class="tech-tag">PDF Parsing</span>
                             </div>
                             <div class="project-impact">
-                                <i class="fas fa-chart-line me-2"></i>75% Cost Reduction | Batch Processing
+                                <i class="fas fa-arrow-trend-up me-2"></i>75% Cost Reduction · Batch Processing
                             </div>
                         </div>
                     </div>
@@ -248,13 +281,13 @@
                 <div class="col-lg-6">
                     <div class="project-card featured">
                         <div class="project-video">
-                            <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7315381409446088704?compact=1" 
-                                    height="300" width="100%" frameborder="0" allowfullscreen 
+                            <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7315381409446088704?compact=1"
+                                    height="300" width="100%" frameborder="0" allowfullscreen
                                     title="WebAI Restaurant Intelligence Demo"></iframe>
                             <div class="project-overlay">
                                 <div class="project-actions">
-                                    <button class="btn btn-outline-light btn-sm" onclick="showProjectDetails('webaiRestaurant')">
-                                        <i class="fas fa-info-circle me-2"></i>Details
+                                    <button class="btn btn-sm" onclick="showProjectDetails('webaiRestaurant')">
+                                        <i class="fas fa-info-circle me-1"></i>Details
                                     </button>
                                 </div>
                             </div>
@@ -262,7 +295,7 @@
                         <div class="project-content">
                             <div class="project-badge">Featured</div>
                             <h4>WebAI: Intelligent Website Assistant</h4>
-                            <p>24/7 AI-powered customer service for restaurants with real-time knowledge base and natural conversations</p>
+                            <p>24/7 AI-powered customer assistant for businesses — trained on real website content, with real-time knowledge base updates and natural conversation flow.</p>
                             <div class="project-tech">
                                 <span class="tech-tag">Next.js</span>
                                 <span class="tech-tag">LangChain</span>
@@ -270,7 +303,7 @@
                                 <span class="tech-tag">Vector Search</span>
                             </div>
                             <div class="project-impact">
-                                <i class="fas fa-clock me-2"></i>24/7 Support | 80% Efficiency Gain
+                                <i class="fas fa-clock me-2"></i>24/7 Support · 80% Efficiency Gain
                             </div>
                         </div>
                     </div>
@@ -280,27 +313,26 @@
                 <div class="col-lg-4">
                     <div class="project-card">
                         <div class="project-image">
-                            <img src="images/projects/backorder-prediction.jpg" alt="Backorder Prediction System">
+                            <img src="images/projects/backorder-prediction.jpg" alt="Supply Chain Forecasting System">
                             <div class="project-overlay">
                                 <div class="project-actions">
-                             
-                                    <button class="btn btn-outline-light btn-sm" onclick="showProjectDetails('backorderPrediction')">
-                                        <i class="fas fa-info-circle me-2"></i>Details
+                                    <button class="btn btn-sm" onclick="showProjectDetails('backorderPrediction')">
+                                        <i class="fas fa-info-circle me-1"></i>Details
                                     </button>
                                 </div>
                             </div>
                         </div>
                         <div class="project-content">
                             <h4>ML-Powered Supply Chain Forecasting</h4>
-                            <p>Enterprise-grade ML pipeline for supply chain optimization with 92% prediction accuracy</p>
+                            <p>Enterprise ML pipeline for supply chain optimization — 92% accuracy, containerized deployment with full CI/CD.</p>
                             <div class="project-tech">
                                 <span class="tech-tag">Python</span>
                                 <span class="tech-tag">Scikit-learn</span>
                                 <span class="tech-tag">Flask</span>
-                                <span class="tech-tag">CI/CD</span>
+                                <span class="tech-tag">Docker</span>
                             </div>
                             <div class="project-impact">
-                                <i class="fas fa-chart-line me-2"></i>92% Accuracy | 25% Cost Reduction
+                                <i class="fas fa-arrow-trend-up me-2"></i>92% Accuracy · 25% Cost Reduction
                             </div>
                         </div>
                     </div>
@@ -310,13 +342,13 @@
                 <div class="col-lg-4">
                     <div class="project-card">
                         <div class="project-video">
-                            <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7331931641566687233?compact=1" 
-                                    height="250" width="100%" frameborder="0" allowfullscreen 
+                            <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7331931641566687233?compact=1"
+                                    height="250" width="100%" frameborder="0" allowfullscreen
                                     title="Stack RAG Chatbot Demo"></iframe>
                         </div>
                         <div class="project-content">
                             <h4>Enterprise Knowledge Assistant</h4>
-                            <p>RAG chatbot integrated with Slack providing instant access to organizational knowledge</p>
+                            <p>RAG chatbot integrated with Slack — instant access to org knowledge with 95% retrieval accuracy and 1000+ queries/week.</p>
                             <div class="project-tech">
                                 <span class="tech-tag">RAG</span>
                                 <span class="tech-tag">Slack API</span>
@@ -324,7 +356,7 @@
                                 <span class="tech-tag">FAISS</span>
                             </div>
                             <div class="project-impact">
-                                <i class="fas fa-users me-2"></i>1000+ Queries/Week | 95% Accuracy
+                                <i class="fas fa-users me-2"></i>1000+ Queries/Week · 95% Accuracy
                             </div>
                         </div>
                     </div>
@@ -352,15 +384,15 @@
                             </div>
                             <div class="project-overlay">
                                 <div class="project-actions">
-                                    <button class="btn btn-outline-light btn-sm" onclick="showProjectDetails('awsBedrockAgent')">
-                                        <i class="fas fa-info-circle me-2"></i>Details
+                                    <button class="btn btn-sm" onclick="showProjectDetails('awsBedrockAgent')">
+                                        <i class="fas fa-info-circle me-1"></i>Details
                                     </button>
                                 </div>
                             </div>
                         </div>
                         <div class="project-content">
                             <h4>Enterprise Sales AI Agent</h4>
-                            <p>AWS Bedrock-powered conversational AI for sales automation with lead qualification (Built in 48hrs)</p>
+                            <p>AWS Bedrock conversational AI for sales automation — full serverless architecture built and deployed in 48 hours.</p>
                             <div class="project-tech">
                                 <span class="tech-tag">AWS Bedrock</span>
                                 <span class="tech-tag">Lambda</span>
@@ -368,7 +400,7 @@
                                 <span class="tech-tag">API Gateway</span>
                             </div>
                             <div class="project-impact">
-                                <i class="fas fa-rocket me-2"></i>48hr Build | Serverless Architecture
+                                <i class="fas fa-rocket me-2"></i>48hr Build · Serverless Architecture
                             </div>
                         </div>
                     </div>
@@ -381,12 +413,13 @@
     <section id="skills" class="skills-section">
         <div class="container">
             <div class="section-header text-center mb-5">
-                <h2 class="section-title">Technical Arsenal</h2>
-                <p class="section-subtitle">Cutting-edge technologies powering intelligent solutions</p>
+                <div class="section-label">Technical Skills</div>
+                <h2 class="section-title">Tech Stack</h2>
+                <p class="section-subtitle">Tools and technologies I use to build production AI systems</p>
             </div>
             <div class="skills-grid">
                 <div class="skill-category">
-                    <h4><i class="fas fa-code me-2"></i>Programming & Frameworks</h4>
+                    <h4><i class="fas fa-code me-2"></i>Languages & Frameworks</h4>
                     <div class="skills-list">
                         <div class="skill-item">
                             <i class="fab fa-python"></i>
@@ -394,49 +427,49 @@
                             <div class="skill-level" data-level="95"></div>
                         </div>
                         <div class="skill-item">
-                            <i class="fas fa-flask"></i>
-                            <span>Flask</span>
+                            <i class="fas fa-bolt"></i>
+                            <span>FastAPI</span>
                             <div class="skill-level" data-level="90"></div>
                         </div>
                         <div class="skill-item">
                             <i class="fas fa-database"></i>
                             <span>PostgreSQL</span>
-                            <div class="skill-level" data-level="85"></div>
+                            <div class="skill-level" data-level="80"></div>
                         </div>
                         <div class="skill-item">
                             <i class="fas fa-chart-bar"></i>
-                            <span>Pandas/NumPy</span>
-                            <div class="skill-level" data-level="95"></div>
+                            <span>Pandas / NumPy</span>
+                            <div class="skill-level" data-level="88"></div>
                         </div>
                     </div>
                 </div>
                 <div class="skill-category">
-                    <h4><i class="fas fa-brain me-2"></i>AI/ML & LLM Technologies</h4>
+                    <h4><i class="fas fa-robot me-2"></i>Agent & LLM Stack</h4>
                     <div class="skills-list">
                         <div class="skill-item">
                             <i class="fas fa-link"></i>
-                            <span>LangChain</span>
-                            <div class="skill-level" data-level="90"></div>
+                            <span>LangChain / LangGraph</span>
+                            <div class="skill-level" data-level="93"></div>
                         </div>
                         <div class="skill-item">
-                            <i class="fas fa-project-diagram"></i>
-                            <span>LangGraph</span>
+                            <i class="fas fa-plug"></i>
+                            <span>MCP Servers</span>
+                            <div class="skill-level" data-level="88"></div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-terminal"></i>
+                            <span>Prompt Engineering</span>
+                            <div class="skill-level" data-level="92"></div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-flask-vial"></i>
+                            <span>Agent Evaluation</span>
                             <div class="skill-level" data-level="85"></div>
                         </div>
                         <div class="skill-item">
                             <i class="fas fa-search"></i>
                             <span>RAG Systems</span>
-                            <div class="skill-level" data-level="88"></div>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-robot"></i>
-                            <span>Agentic Workflows</span>
-                            <div class="skill-level" data-level="85"></div>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-comments"></i>
-                            <span>Prompt Engineering</span>
-                            <div class="skill-level" data-level="92"></div>
+                            <div class="skill-level" data-level="90"></div>
                         </div>
                     </div>
                 </div>
@@ -446,31 +479,31 @@
                         <div class="skill-item">
                             <i class="fab fa-aws"></i>
                             <span>AWS (EC2, S3, Lambda)</span>
-                            <div class="skill-level" data-level="87"></div>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-brain"></i>
-                            <span>AWS Bedrock</span>
-                            <div class="skill-level" data-level="80"></div>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-cogs"></i>
-                            <span>CI/CD Actions</span>
                             <div class="skill-level" data-level="85"></div>
                         </div>
                         <div class="skill-item">
-                            <i class="fab fa-github"></i>
-                            <span>GitHub</span>
-                            <div class="skill-level" data-level="90"></div>
+                            <i class="fab fa-docker"></i>
+                            <span>Docker</span>
+                            <div class="skill-level" data-level="88"></div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-code-branch"></i>
+                            <span>CI/CD · GitHub Actions</span>
+                            <div class="skill-level" data-level="82"></div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Grafana / Loki</span>
+                            <div class="skill-level" data-level="78"></div>
                         </div>
                     </div>
                 </div>
                 <div class="skill-category">
-                    <h4><i class="fas fa-microchip me-2"></i>AI Models & Tools</h4>
+                    <h4><i class="fas fa-microchip me-2"></i>LLM Models & Tools</h4>
                     <div class="skills-list">
                         <div class="skill-item">
                             <i class="fas fa-brain"></i>
-                            <span>OpenAI Models</span>
+                            <span>OpenAI / Anthropic Claude</span>
                             <div class="skill-level" data-level="92"></div>
                         </div>
                         <div class="skill-item">
@@ -480,14 +513,13 @@
                         </div>
                         <div class="skill-item">
                             <i class="fas fa-server"></i>
-                            <span>Ollama/VLLM</span>
+                            <span>Ollama / vLLM</span>
                             <div class="skill-level" data-level="80"></div>
                         </div>
-              
                         <div class="skill-item">
-                            <i class="fas fa-workflow"></i>
-                            <span>N8N</span>
-                            <div class="skill-level" data-level="75"></div>
+                            <i class="fas fa-boxes-stacked"></i>
+                            <span>Vector DBs (FAISS, Chroma)</span>
+                            <div class="skill-level" data-level="88"></div>
                         </div>
                     </div>
                 </div>
@@ -498,48 +530,59 @@
     <!-- About Section -->
     <section id="about" class="about-section">
         <div class="container">
-            <div class="row align-items-center">
+            <div class="row align-items-center g-5">
                 <div class="col-lg-5">
                     <div class="about-image">
-                        <img src="images/about/akshay.png" alt="Akshay Kumar BM" class="img-fluid rounded-3">
+                        <div class="about-image-frame">
+                            <img src="images/about/akshay.png" alt="Akshay Kumar BM" class="img-fluid">
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-7">
                     <div class="about-content">
-                        <h2 class="section-title">Transforming Ideas into Intelligent Reality</h2>
-                        <p class="lead">
-                            AI Engineer with 3+ years of experience building production-ready machine learning systems 
-                            that solve complex business challenges and drive measurable impact.
+                        <div class="section-label">About Me</div>
+                        <h2 class="section-title">I build AI systems that work in production</h2>
+                        <p class="about-lead">
+                            Senior AI Engineer with 3+ years building and deploying intelligent systems. 
+                            My core focus is production multi-agent architecture — specifically agent orchestration, 
+                            MCP server development, precise prompt engineering, and the eval frameworks that 
+                            make it all trustworthy enough to ship.
+                        </p>
+                        <p class="about-body">
+                            I've shipped everything from invoice-parsing chatbots and enterprise RAG systems 
+                            to Slack-integrated knowledge assistants and cloud-native AI agents on AWS Bedrock. 
+                            I care deeply about the gap between "it works in a notebook" and "it works in prod" — 
+                            and I've spent years closing that gap.
                         </p>
                         <div class="about-highlights">
                             <div class="highlight-item">
-                                <i class="fas fa-rocket"></i>
+                                <div class="highlight-icon"><i class="fas fa-network-wired"></i></div>
                                 <div>
-                                    <h5>Innovation-Driven</h5>
-                                    <p>Specialized in cutting-edge AI technologies including agentic workflows, RAG systems, and LLM fine-tuning</p>
+                                    <h5>Production-First Mindset</h5>
+                                    <p>Every system I design accounts for failure modes, deterministic routing, and observability from day one.</p>
                                 </div>
                             </div>
                             <div class="highlight-item">
-                                <i class="fas fa-chart-line"></i>
+                                <div class="highlight-icon"><i class="fas fa-plug"></i></div>
                                 <div>
-                                    <h5>Results-Oriented</h5>
-                                    <p>Delivered ML solutions achieving 90%+ accuracy rates and significant cost reductions for businesses</p>
+                                    <h5>MCP & Tooling Expert</h5>
+                                    <p>Built custom MCP servers integrating Jira, Confluence, GitHub, Grafana, and LMS platforms for real enterprise workflows.</p>
                                 </div>
                             </div>
                             <div class="highlight-item">
-                                <i class="fas fa-cloud"></i>
+                                <div class="highlight-icon"><i class="fas fa-flask-vial"></i></div>
                                 <div>
-                                    <h5>Production-Ready</h5>
-                                    <p>Expert in deploying scalable AI systems on cloud infrastructure with robust CI/CD pipelines</p>
+                                    <h5>Evaluation-Driven Development</h5>
+                                    <p>I don't ship agents without evals. LLM-as-judge, regression suites, and tracing are part of every delivery.</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="about-cta">
+                        <div class="about-cta mt-4">
                             <a href="#contact" class="btn btn-primary btn-lg me-3">
-                                <i class="fas fa-handshake me-2"></i>Let's Collaborate
+                                <i class="fas fa-handshake me-2"></i>Let's Work Together
                             </a>
-                            <a href="#" class="btn btn-outline-primary btn-lg">
-                                <i class="fas fa-download me-2"></i>Download Resume
+                            <a href="#" class="btn btn-outline-light btn-lg">
+                                <i class="fas fa-download me-2"></i>Resume
                             </a>
                         </div>
                     </div>
@@ -552,78 +595,37 @@
     <section id="contact" class="contact-section">
         <div class="container">
             <div class="section-header text-center mb-5">
-                <h2 class="section-title">Ready to Build Something Intelligent?</h2>
-                <p class="section-subtitle">Let's discuss your AI project and create solutions that drive real business value</p>
+                <div class="section-label">Get In Touch</div>
+                <h2 class="section-title">Let's Build Something Real</h2>
+                <p class="section-subtitle">Open to remote Senior AI Engineer roles and interesting agent / LLM infrastructure projects</p>
             </div>
-            <!-- <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="contact-form-container">
-                        <form class="contact-form">
-                            <div class="row g-3">
-                                <div class="col-md-6">
-                                    <input type="text" class="form-control" placeholder="Your Name" required>
-                                </div>
-                                <div class="col-md-6">
-                                    <input type="email" class="form-control" placeholder="Email Address" required>
-                                </div>
-                                <div class="col-md-6">
-                                    <select class="form-select">
-                                        <option>Project Budget</option>
-                                        <option>$5K - $10K</option>
-                                        <option>$10K - $25K</option>
-                                        <option>$25K+</option>
-                                        <option>Full-time Role</option>
-                                    </select>
-                                </div>
-                                <div class="col-md-6">
-                                    <select class="form-select">
-                                        <option>Timeline</option>
-                                        <option>1-2 weeks</option>
-                                        <option>1-2 months</option>
-                                        <option>3+ months</option>
-                                        <option>Ongoing</option>
-                                    </select>
-                                </div>
-                                <div class="col-12">
-                                    <textarea class="form-control" rows="4" placeholder="Tell me about your AI/ML project requirements..."></textarea>
-                                </div>
-                                <div class="col-12 text-center">
-                                    <button type="submit" class="btn btn-primary btn-lg">
-                                        <i class="fas fa-paper-plane me-2"></i>Send Project Details
-                                    </button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div> -->
             <div class="contact-info-grid">
                 <div class="contact-info-item">
-                    <i class="fas fa-envelope"></i>
+                    <div class="contact-icon"><i class="fas fa-envelope"></i></div>
                     <div>
                         <h5>Email</h5>
-                        <p>akshaykumarbedre.bm@gmail.com</p>
+                        <p><a href="mailto:akshaykumarbedre.bm@gmail.com">akshaykumarbedre.bm@gmail.com</a></p>
                     </div>
                 </div>
                 <div class="contact-info-item">
-                    <i class="fas fa-phone"></i>
+                    <div class="contact-icon"><i class="fas fa-phone"></i></div>
                     <div>
                         <h5>Phone</h5>
                         <p>(+91) 9164623536</p>
                     </div>
                 </div>
                 <div class="contact-info-item">
-                    <i class="fab fa-linkedin"></i>
+                    <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
                     <div>
                         <h5>LinkedIn</h5>
-                        <p><a href="https://www.linkedin.com/in/akshay-kumar-bm/" target="_blank">Connect with me</a></p>
+                        <p><a href="https://www.linkedin.com/in/akshay-kumar-bm/" target="_blank" rel="noopener">akshay-kumar-bm</a></p>
                     </div>
                 </div>
                 <div class="contact-info-item">
-                    <i class="fab fa-github"></i>
+                    <div class="contact-icon"><i class="fab fa-github"></i></div>
                     <div>
                         <h5>GitHub</h5>
-                        <p><a href="https://github.com/akshaykumarbedre" target="_blank">View repositories</a></p>
+                        <p><a href="https://github.com/akshay-kumar-bm" target="_blank" rel="noopener">akshay-kumar-bm</a></p>
                     </div>
                 </div>
             </div>
@@ -635,18 +637,18 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-brand">
-                    <h5><i class="fas fa-robot me-2"></i>Akshay Kumar BM</h5>
-                    <p>AI Engineer building the future, one intelligent solution at a time.</p>
+                    <h5><span class="brand-icon">⬡</span> Akshay Kumar BM</h5>
+                    <p>Senior AI Engineer · Building production multi-agent systems.</p>
                 </div>
                 <div class="footer-links">
                     <a href="#home">Home</a>
+                    <a href="#expertise">Expertise</a>
                     <a href="#projects">Projects</a>
-                    <a href="#skills">Skills</a>
                     <a href="#contact">Contact</a>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Akshay Kumar BM. All rights reserved. Built with intelligence and passion.</p>
+                <p>&copy; 2025 Akshay Kumar BM · Bengaluru, India 🇮🇳 · Available globally 🌐</p>
             </div>
         </div>
     </footer>
@@ -671,5 +673,14 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Scroll progress bar
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.scrollY;
+            const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+            const progress = (scrollTop / docHeight) * 100;
+            document.querySelector('.scroll-progress').style.width = progress + '%';
+        });
+    </script>
 </body>
 </html>
